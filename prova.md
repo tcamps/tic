@@ -1,3 +1,7 @@
+---
+permalink:prova.html
+category:python
+---
 # Títol de prova
 `codi`
 
