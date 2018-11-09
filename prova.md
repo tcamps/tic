@@ -8,3 +8,7 @@
 
 1. Primer
 2. Segon
+
+Taula|taula
+----|----
+e1|e2
