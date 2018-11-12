@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Un exemple de gestió de 'Contactes' amb Python i MySQL
-permalink: /exemple_contactes.html
+permalink: exemple_contactes.html
 ---
 
 # Gestió de 'Contactes' amb Pyhton i MySQL
