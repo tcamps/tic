@@ -79,3 +79,16 @@ Per completar la gestió ens faltarien, com a mínim, dos funcions més:
 * Editar un contacte. Funció que rep com a paràmetres les dades d'un contacte existent (és molt important l'identificador) i realitza una modificació.
 * Eliminar un contacte. Funció que rep com a paràmetre l'identificar d'un contacte existent i l'elimina.
 ## Interfície de l'aplicació - icontactes.py
+Aquest arxiu serà el que executarem des de la terminal. Ens mostrarà diferents opcions i interactuarà amb l'arxiu **contactes.py** executant les diferents funcions.
+Importem l'arxiu *contactes.py*:
+`import contactes`
+
+Primer de tot, preparem una funció per mostrar per pantalla un llistat de tots els contactes amb un format adequat. Aquesta funció l'haurem de cridar al voler mostrar tots els contactes, ja sigui perquè s'ha solicitat una simple visualització de la taula o per escollir un contacte a modificar o eliminar.
+```
+def imprimir_contactes():
+    lcontactes = contactes.llistar_contactes()
+    print("{:<5s} {:<15s} {:<20s} {:<15s} {}".format("ID", "NOM", "COGNOMS", "TELÈFON", "EMAIL"))
+    for c in lcontactes:
+        print("{:<5s} {:<15s} {:<20s} {:<15s} {}".format(str(c[0]),c[1],c[2],c[3],c[4]))
+
+```
