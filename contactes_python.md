@@ -72,5 +72,10 @@ def llistar_contactes():
 També hem d'afegir una segona funció que rep com a paràmetres un nou contacte i l'afegeix a la base de dades:
 ```
 def nou_contacte(nom, cognoms, telf, email):
-    bd.executa_consulta("INSERT INTO contactes(nom, cognoms, telf, email) VALUES('"+ nom +"', '"+ cognoms +"', '" + telf + "', '" + email + "')")
+    bd.executa_consulta("INSERT INTO contactes(nom, cognoms, telf, email) 
+    VALUES('"+ nom +"', '"+ cognoms +"', '" + telf + "', '" + email + "')")
 ```
+Per completar la gestió ens faltarien, com a mínim, dos funcions més:
+* Editar un contacte. Funció que rep com a paràmetres les dades d'un contacte existent (és molt important l'identificador) i realitza una modificació.
+* Eliminar un contacte. Funció que rep com a paràmetre l'identificar d'un contacte existent i l'elimina.
+## Interfície de l'aplicació - icontactes.py
