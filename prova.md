@@ -1,7 +1,10 @@
 ---
+layout: post
+title: Blogging Like a Hacker
 permalink:prova.html
 category:python
 ---
+
 # Títol de prova
 `codi`
 
