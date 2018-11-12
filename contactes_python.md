@@ -13,9 +13,9 @@ Partim amb una base de dades MySQL 'contactes' amb una sola taula 'contactes' am
 
 ## Programació per capes
 A fi de millorar el disseny de la nostra aplicació la desenvoluparem utilitzant tres capes:
-1. Capa de presentació. En aquest cas serà una interfície per consola i estarà formada per un sol arxiu: **icontactes.py**
+1. Capa de dades. La base de dades i l'accés a ella. Estarà formada per una petita llibreria que connectarà a la base de dades i rebrà consultes SQL que seran executades. Formada per l'arxiu **bd.py**
 2. Capa de lògica de negoci. Una petita llibreria amb les consultes SQL i retornant les dades necessàries. Formada per l'arxiu **contactes.py**
-3. Capa de dades. La base de dades i l'accés a ella. Estarà formada per una petita llibreria que connectarà a la base de dades i rebrà consultes SQL que seran executades. Formada per l'arxiu **bd.py**
+3. Capa de presentació. En aquest cas serà una interfície per consola i estarà formada per un sol arxiu: **icontactes.py**
 
 ## Llibreria d'accés a la base de dades - bd.py
 Primer de tot crearem un arxiu anomenat **bd.py** el qual s'encarregarà de connectar amb la base de dades del projecte i executar una consulta SQL. Si la consulta és un *SELECT* retornarà una col·lecció de dades amb totes les files del resultat. En cas de tractar-se d'una consulta de modificació *INSERT*, *UPDATE* o *DELETE* no retornarà res. 
@@ -55,7 +55,7 @@ def executa_consulta(consulta=''):
     # Retorna les dades (o res en cas d'escriptures)
     return resultat
 ```
-El codi és molt simple, però per el cas que tractem és suficient. Es pot reaprofitar l'arxiu simplement adaptant les quatre variables d'accés a cada projecte.
+El codi és molt simple, però pel cas que tractem és suficient. Es pot reaprofitar l'arxiu simplement adaptant les quatre variables d'accés a cada projecte.
 
 ## Interacció interfície i base de dades - contactes.py
 En l'arxiu **contactes.py** hi haurà les funcions que seran cridades des de la interfície per fer la gestió de contactes: *llistar contactes*, *afegir contacte*, *retornar contacte*, *modificar contacte* i *eliminar contacte*. Aquest arxiu farà ús de la llibreria **bd.py** per executar consultes SQL a la base de dades.
@@ -76,6 +76,8 @@ def nou_contacte(nom, cognoms, telf, email):
     bd.executa_consulta("INSERT INTO contactes(nom, cognoms, telf, email) 
     VALUES('"+ nom +"', '"+ cognoms +"', '" + telf + "', '" + email + "')")
 ```
+> És important notar que en el *INSERT* no hem indicat el camp *id* de la taula. Això només ho podem fer si aquest camp està definit com a *AUTO_INCREMENT*, com és aquest cas.
+
 Per completar la gestió ens faltarien, com a mínim, dos funcions més:
 * Editar un contacte. Funció que rep com a paràmetres les dades d'un contacte existent (és molt important l'identificador) i realitza una modificació.
 * Eliminar un contacte. Funció que rep com a paràmetre l'identificar d'un contacte existent i l'elimina.
