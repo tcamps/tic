@@ -79,6 +79,7 @@ def nou_contacte(nom, cognoms, telf, email):
 Per completar la gestió ens faltarien, com a mínim, dos funcions més:
 * Editar un contacte. Funció que rep com a paràmetres les dades d'un contacte existent (és molt important l'identificador) i realitza una modificació.
 * Eliminar un contacte. Funció que rep com a paràmetre l'identificar d'un contacte existent i l'elimina.
+
 ## Interfície de l'aplicació - icontactes.py
 Aquest arxiu serà el que executarem des de la terminal. Ens mostrarà diferents opcions i interactuarà amb l'arxiu **contactes.py** executant les diferents funcions.
 Importem l'arxiu *contactes.py*:
