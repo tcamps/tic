@@ -1,10 +1,3 @@
----
-layout: post
-title: Prova
-permalink: prova.html
-category: python
----
-
 # Títol de prova
 `codi`
 
