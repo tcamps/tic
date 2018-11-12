@@ -18,34 +18,41 @@ A fi de millorar el disseny de la nostra aplicació la desenvoluparem utilitzant
 3. Capa de dades. La base de dades i l'accés a ella. Estarà formada per una petita llibreria que connectarà a la base de dades i rebrà consultes SQL que seran executades. Formada per l'arxiu **bd.py**
 
 ## Llibreria d'accés a la base de dades - bd.py
-Un sol arxiu bd.py format pel següent codi:
+Primer de tot crearem un arxiu anomenat **bd.py** el qual s'encarregarà de connectar amb la base de dades del projecte i executar una consulta SQL. Si la consulta és un *SELECT* retornarà una col·lecció de dades amb totes les files del resultat. En cas de tractar-se d'una consulta de modificació *INSERT*, *UPDATE* o *DELETE* no retornarà res. 
 ```
 import MySQLdb
 
-DB_HOST = 'tcamps.mysql.pythonanywhere-services.com'
-DB_USER = 'tcamps'
-DB_PASS = 'tcampstcamps'
-DB_NAME = 'tcamps$contactes'
+# Variables amb les dades d'accés
+BD_SERVIDOR = ''
+BD_USUARI = ''
+BD_CONTRASENYA = ''
+BD_NOMBD = ''
 
 #Funció simple que connecta amb la base de dades i executa una consulta
 #En cas de 'SELECT' retorna una col·leció de dades, en la resta de casos no retorna res
-def run_query(query=''):
-    datos = [DB_HOST, DB_USER, DB_PASS, DB_NAME]
+def executa_consulta(consulta=''):
+    # Conectar a la base de dades i crear un cursor
+    dades = [BD_SERVIDOR, BD_USUARI, BD_CONTRASENYA, BD_NOMBD]
+    conn = MySQLdb.connect(*dades)
+    cursor = conn.cursor()
 
-    conn = MySQLdb.connect(*datos) # Conectar a la base de dades
+    # Executa la consulta rebuda
+    cursor.execute(consulta)
 
-    cursor = conn.cursor()         # Crear un cursor
-
-    cursor.execute(query)          # Executar una consulta
-
-    if query.upper().startswith('SELECT'):
-        data = cursor.fetchall()   # Crea la col·leció de dades data amb totes les dades
+    # Comprova si és consulta de dades o modificació
+    if consulta.upper().startswith('SELECT'):
+        # Crea la col·leció de dades amb el resultat
+        resultat = cursor.fetchall()
     else:
-        conn.commit()              # Fa efectiva l'escriptura de dades
-        data = None
+        # Fa efectiva l'escriptura de dades i no retorna res
+        conn.commit()
+        resultat = None
 
-    cursor.close()                 # Tanca el cursor
-    conn.close()                   # Tanca la connexió
+    # Tancar el cursor i la connexió
+    cursor.close()
+    conn.close()
 
-    return data                    # Retorna les dades (o res en cas d'escriptures)
+    # Retorna les dades (o res en cas d'escriptures)
+    return resultat
 ```
+El codi és molt simple, però per el cas que tractem és suficient. Es pot reaprofitar l'arxiu simplement adaptant les quatre variables d'accés a cada projecte.
