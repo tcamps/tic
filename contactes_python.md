@@ -56,3 +56,21 @@ def executa_consulta(consulta=''):
     return resultat
 ```
 El codi és molt simple, però per el cas que tractem és suficient. Es pot reaprofitar l'arxiu simplement adaptant les quatre variables d'accés a cada projecte.
+
+## Interacció interfície i base de dades - contactes.py
+En l'arxiu **contactes.py** hi haurà les funcions que seran cridades des de la interfície per fer la gestió de contactes: *llistar contactes*, *afegir contacte*, *retornar contacte*, *modificar contacte* i *eliminar contacte*. Aquest arxiu farà ús de la llibreria **bd.py** per executar consultes SQL a la base de dades.
+
+Primer de tot, importem la llibreria **bd.py**:
+`import bd.py`
+
+Anem a crear una funció que retorni un llistat de tots els contactes disponibles a la base de dades:
+```
+def llistar_contactes():
+    contactes = bd.executa_consulta('SELECT * FROM contactes')
+    return contactes
+```
+També hem d'afegir una segona funció que rep com a paràmetres un nou contacte i l'afegeix a la base de dades:
+```
+def nou_contacte(nom, cognoms, telf, email):
+    bd.executa_consulta("INSERT INTO contactes(nom, cognoms, telf, email) VALUES('"+ nom +"', '"+ cognoms +"', '" + telf + "', '" + email + "')")
+```
