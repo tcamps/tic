@@ -61,6 +61,7 @@ El codi és molt simple, però per el cas que tractem és suficient. Es pot reap
 En l'arxiu **contactes.py** hi haurà les funcions que seran cridades des de la interfície per fer la gestió de contactes: *llistar contactes*, *afegir contacte*, *retornar contacte*, *modificar contacte* i *eliminar contacte*. Aquest arxiu farà ús de la llibreria **bd.py** per executar consultes SQL a la base de dades.
 
 Primer de tot, importem la llibreria **bd.py**:
+
 `import bd.py`
 
 Anem a crear una funció que retorni un llistat de tots els contactes disponibles a la base de dades:
@@ -81,6 +82,7 @@ Per completar la gestió ens faltarien, com a mínim, dos funcions més:
 ## Interfície de l'aplicació - icontactes.py
 Aquest arxiu serà el que executarem des de la terminal. Ens mostrarà diferents opcions i interactuarà amb l'arxiu **contactes.py** executant les diferents funcions.
 Importem l'arxiu *contactes.py*:
+
 `import contactes`
 
 Primer de tot, preparem una funció per mostrar per pantalla un llistat de tots els contactes amb un format adequat. Aquesta funció l'haurem de cridar al voler mostrar tots els contactes, ja sigui perquè s'ha solicitat una simple visualització de la taula o per escollir un contacte a modificar o eliminar.
@@ -92,3 +94,32 @@ def imprimir_contactes():
         print("{:<5s} {:<15s} {:<20s} {:<15s} {}".format(str(c[0]),c[1],c[2],c[3],c[4]))
 
 ```
+A continuació creem un bucle fins que s'escolli l'opció de sortir amb les opcions de llistar els contactes i crear-ne un de nou:
+```
+opcio = 0
+while opcio != "5":
+    print(
+"""
+Opcions:
+    (1) Llistar tots els contactes
+    (2) Crear un nou contacte
+    (5) Sortir
+""")
+
+    opcio = input("Escoll una opció: ")
+
+    if opcio == "1":
+        imprimir_contactes()
+    elif opcio == "2":
+        nom = input("Introdueix el 'NOM': ")
+        cognoms = input("Introdueix els 'COGNOMS': ")
+        telf = input("Introdueix el 'TELÈFON': ")
+        email = input("Introdueix el 'EMAIL': ")
+        contactes.nou_contacte(nom,cognoms,telf,email)
+    elif opcio == "5":
+        pass
+    else:
+        print("Opció incorrecte")
+
+```
+Com ja s'ha comentat en l'arxiu **contactes.py**, aquí faltarien les opcions 3 i 4 per modificar i eliminar un contacte.
