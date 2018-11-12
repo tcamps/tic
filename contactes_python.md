@@ -90,7 +90,8 @@ Primer de tot, preparem una funció per mostrar per pantalla un llistat de tots 
 ```
 def imprimir_contactes():
     lcontactes = contactes.llistar_contactes()
-    print("{:<5s} {:<15s} {:<20s} {:<15s} {}".format("ID", "NOM", "COGNOMS", "TELÈFON", "EMAIL"))
+    print("{:<5s} {:<15s} {:<20s} {:<15s} {}"
+        .format("ID", "NOM", "COGNOMS", "TELÈFON", "EMAIL"))
     for c in lcontactes:
         print("{:<5s} {:<15s} {:<20s} {:<15s} {}".format(str(c[0]),c[1],c[2],c[3],c[4]))
 
