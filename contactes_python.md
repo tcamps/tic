@@ -62,7 +62,7 @@ En l'arxiu **contactes.py** hi haurà les funcions que seran cridades des de la 
 
 Primer de tot, importem la llibreria **bd.py**:
 
-`import bd.py`
+`import bd`
 
 Anem a crear una funció que retorni un llistat de tots els contactes disponibles a la base de dades:
 ```
