@@ -25,6 +25,11 @@ Molt simple, el botó de jugar canvia de pantalla i el de sortir tanca l'aplicac
 
 ## Pantalla de joc del primer nivell "scrNivell1"
 ### Disseny de la pantalla
+Formada pels següents elements:
+* etqNivell. Etiqueta estàtica que indica el nivell de joc actual.
+* etqVides. Etiqueta que indica el nombre de vides.
+* Lienzo1. Llenç principal del joc.
+* sprBarra.
 
 **Per moure la barra mitjançant moviment de mòbil utiltizar acelerometro**
 ![Programació acelerometro](/assets/mit_breakout/acelerometro.png)
