@@ -22,3 +22,6 @@ Col·loquem els tres objectes dins una dispossició vertical i, entre ells, pose
 Molt simple, el botó de jugar canvia de pantalla i el de sortir tanca l'aplicació.
 
 ![Pantalla inici - Programació](/assets/mit_breakout/progInici.png)
+
+## Pantalla de joc del primer nivell "scrNivell1"
+### Disseny de la pantalla
