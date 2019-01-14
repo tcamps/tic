@@ -55,7 +55,7 @@ Crearem tres procediments per inicialitzar la posició dels blocs, la barra i la
 * **iniPilota**. Posiciona la pilota al centre de la pantalla, estableix la velocitat i comença a moure-la.
 ![Procediment inicialitza pilota](/assets/mit_breakout/iniPilota.png)
 * **iniBlocs**. Posiciona els quatre blocs.
-![Procediment inicialitza blocs](/assets/mit_breakout/iniBloc.png)
+![Procediment inicialitza blocs](/assets/mit_breakout/iniBlocs.png)
 
 **Per moure la barra mitjançant moviment de mòbil utiltizar acelerometro**
 ![Programació acelerometro](/assets/mit_breakout/acelerometro.png)
