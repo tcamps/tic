@@ -40,5 +40,15 @@ A la següent imatge es poden apreciar les disposicions utilitzades per col·loc
 
 ![Pantalla 1r nivell - Disseny](/assets/mit_breakout/scrNivell1.png)
 
+### Programació
+Comencem la programació creant tres variables necessàries pel control del joc:
+* **vides**. Les vides que tindrà el jugador.
+* **num_blocs**. Li restarem un cada cop que es trenqui un bloc. D'aquesta manera podem controlar el final del nivellv.
+* **vel_pilotes**. Velocitat inicial de la pilota. En properes versions podem millorar el joc fent que cada cert temps s'incrementi el valor d'aquesta variable.
+
+![Variables inicials](/assets/mit_breakout/variables_scrNivell1.png)
+
+
+
 **Per moure la barra mitjançant moviment de mòbil utiltizar acelerometro**
 ![Programació acelerometro](/assets/mit_breakout/acelerometro.png)
