@@ -38,7 +38,7 @@ Formada pels següents elements:
 
 A la següent imatge es poden apreciar les disposicions utilitzades per col·locar tots els elements.
 
-![Pantalla 1r nivell - Disseny](/assets/mit_breakout/srcNivell1.png)
+![Pantalla 1r nivell - Disseny](/assets/mit_breakout/scrNivell1.png)
 
 **Per moure la barra mitjançant moviment de mòbil utiltizar acelerometro**
 ![Programació acelerometro](/assets/mit_breakout/acelerometro.png)
