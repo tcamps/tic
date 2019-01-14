@@ -26,15 +26,15 @@ Molt simple, el botó de jugar canvia de pantalla i el de sortir tanca l'aplicac
 ## Pantalla de joc del primer nivell "scrNivell1"
 ### Disseny de la pantalla
 Formada pels següents elements:
-* etqNivell. Etiqueta estàtica que indica el nivell de joc actual.
-* etqVides. Etiqueta que indica el nombre de vides.
-* Lienzo1. Llenç principal del joc.
-* sprBarra. La barra inferior del joc que mourà el jugador.
-* sprPilota. La pilota del joc.
-* sprGameOver. Imatge que sortirà al finalitzar el joc.
-* sprBlocG1, sprBlocG2, sprBlocV1, sprBlocV2. Les barres de colors (G=Groc i V=Vermell) que cal trencar amb la pilota. En aquesta primera versió del joc només col·locarem quatre barres.
-* rljInici. Rellotge per provocar un retard d'uns segons al carregar la pàgina i col·locar els objectes. A l'adaptar la posició dels objectes de manera dinàmica a les dimensions de la pantalla podem tindre problemes si no esperem uns segons a que l'aplicació calculi l'alçada i amplada de la pantalla.
-* rljGameOver. Amb aquest rellotge mostrarem la imatge *sprGameOver* durants uns segons i després obrirem la finestra inicial.
+* **etqNivell**. Etiqueta estàtica que indica el nivell de joc actual.
+* **etqVides**. Etiqueta que indica el nombre de vides.
+* **Lienzo1**. Llenç principal del joc.
+* **sprBarra**. La barra inferior del joc que mourà el jugador.
+* **sprPilota**. La pilota del joc.
+* **sprGameOver**. Imatge que sortirà al finalitzar el joc.
+* **sprBlocG1, sprBlocG2, sprBlocV1, sprBlocV2**. Les barres de colors (G=Groc i V=Vermell) que cal trencar amb la pilota. En aquesta primera versió del joc només col·locarem quatre barres.
+* **rljInici**. Rellotge per provocar un retard d'uns segons al carregar la pàgina i col·locar els objectes. A l'adaptar la posició dels objectes de manera dinàmica a les dimensions de la pantalla podem tindre problemes si no esperem uns segons a que l'aplicació calculi l'alçada i amplada de la pantalla.
+* **rljGameOver**. Amb aquest rellotge mostrarem la imatge *sprGameOver* durants uns segons i després obrirem la finestra inicial.
 
 A la següent imatge es poden apreciar les disposicions utilitzades per col·locar tots els elements.
 
