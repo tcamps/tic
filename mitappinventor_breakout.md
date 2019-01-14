@@ -49,7 +49,13 @@ Comencem la programació creant tres variables necessàries pel control del joc:
 
 ![Variables inicials](/assets/mit_breakout/variables_scrNivell1.png)
 
-
+Crearem tres procediments per inicialitzar la posició dels blocs, la barra i la pilota. Els [procediments](http://appinventor.mit.edu) són agrupacions de codi que poden ser executades des de qualsevol altre lloc. Ens serveixen per organitzar millor el codi i per reaprofitar porcions de codi que són executades des de varis llocs.
+* **iniBarra**. Posiciona la barra a baixa de la pantalla i al centre.
+![Procediment inicialitza barra](/assets/mit_breakout/iniBarra.png)
+* **iniPilota**. Posiciona la pilota al centre de la pantalla, estableix la velocitat i comença a moure-la.
+![Procediment inicialitza pilota](/assets/mit_breakout/iniPilota.png)
+* **iniBlocs**. Posiciona els quatre blocs.
+![Procediment inicialitza blocs](/assets/mit_breakout/iniBloc.png)
 
 **Per moure la barra mitjançant moviment de mòbil utiltizar acelerometro**
 ![Programació acelerometro](/assets/mit_breakout/acelerometro.png)
