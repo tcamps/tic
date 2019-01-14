@@ -36,5 +36,9 @@ Formada pels següents elements:
 * rljInici. Rellotge per provocar un retard d'uns segons al carregar la pàgina i col·locar els objectes. A l'adaptar la posició dels objectes de manera dinàmica a les dimensions de la pantalla podem tindre problemes si no esperem uns segons a que l'aplicació calculi l'alçada i amplada de la pantalla.
 * rljGameOver. Amb aquest rellotge mostrarem la imatge *sprGameOver* durants uns segons i després obrirem la finestra inicial.
 
+A la següent imatge es poden apreciar les disposicions utilitzades per col·locar tots els elements.
+
+![Pantalla 1r nivell - Disseny](/assets/mit_breakout/srcNivell1.png)
+
 **Per moure la barra mitjançant moviment de mòbil utiltizar acelerometro**
 ![Programació acelerometro](/assets/mit_breakout/acelerometro.png)
