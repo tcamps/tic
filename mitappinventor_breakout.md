@@ -31,8 +31,9 @@ Formada pels següents elements:
 * **Lienzo1**. Llenç principal del joc.
 * **sprBarra**. La barra inferior del joc que mourà el jugador.
 * **sprPilota**. La pilota del joc.
+* **sprLevelUp**. Imatge que sortirà al finalitzar el nivell (trencar tots els blocs).
 * **sprGameOver**. Imatge que sortirà al finalitzar el joc.
-* **sprBlocG1, sprBlocG2, sprBlocV1, sprBlocV2**. Les barres de colors (G=Groc i V=Vermell) que cal trencar amb la pilota. En aquesta primera versió del joc només col·locarem quatre barres.
+* **sprBlocG1, sprBlocG2, sprBlocV1, sprBlocV2**. Els blocs de colors (G=Groc i V=Vermell) que cal trencar amb la pilota. En aquesta primera versió del joc només col·locarem quatre blocs.
 * **rljInici**. Rellotge per provocar un retard d'uns segons al carregar la pàgina i col·locar els objectes. A l'adaptar la posició dels objectes de manera dinàmica a les dimensions de la pantalla podem tindre problemes si no esperem uns segons a que l'aplicació calculi l'alçada i amplada de la pantalla.
 * **rljGameOver**. Amb aquest rellotge mostrarem la imatge *sprGameOver* durants uns segons i després obrirem la finestra inicial.
 
@@ -43,7 +44,7 @@ A la següent imatge es poden apreciar les disposicions utilitzades per col·loc
 ### Programació
 Comencem la programació creant tres variables necessàries pel control del joc:
 * **vides**. Les vides que tindrà el jugador.
-* **num_blocs**. Li restarem un cada cop que es trenqui un bloc. D'aquesta manera podem controlar el final del nivellv.
+* **num_blocs**. Li restarem un cada cop que es trenqui un bloc. D'aquesta manera podem controlar el final del nivell.
 * **vel_pilotes**. Velocitat inicial de la pilota. En properes versions podem millorar el joc fent que cada cert temps s'incrementi el valor d'aquesta variable.
 
 ![Variables inicials](/assets/mit_breakout/variables_scrNivell1.png)
