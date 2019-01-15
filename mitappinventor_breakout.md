@@ -49,7 +49,7 @@ Comencem la programació creant tres variables necessàries pel control del joc:
 
 ![Variables inicials](/assets/mit_breakout/variables_scrNivell1.png)
 
-Crearem tres procediments per inicialitzar la posició dels blocs, la barra i la pilota. Els [procediments](http://appinventor.mit.edu) són agrupacions de codi que poden ser executades des de qualsevol altre lloc. Ens serveixen per organitzar millor el codi i per reaprofitar porcions de codi que són executades des de varis llocs.
+Crearem tres procediments per inicialitzar la posició dels blocs, la barra i la pilota. Els [procediments](http://appinventor.mit.edu) són agrupacions de codi que poden ser executades des de qualsevol altre lloc. Ens serveixen per organitzar i reaprofitar el codi.
 * **iniBarra**. Posiciona la barra a baixa de la pantalla i al centre.
 ![Procediment inicialitza barra](/assets/mit_breakout/iniBarra.png)
 * **iniPilota**. Posiciona la pilota al centre de la pantalla, estableix la velocitat i comença a moure-la.
@@ -57,5 +57,14 @@ Crearem tres procediments per inicialitzar la posició dels blocs, la barra i la
 * **iniBlocs**. Posiciona els quatre blocs.
 ![Procediment inicialitza blocs](/assets/mit_breakout/iniBlocs.png)
 
+Anem a programar l'inici del joc en carregar la pantalla. Aquí utilitzarem l'element **rljInici** per provocar un petit retard de 2 segons. El temps de retard l'hem assignat a la pantalla de disseny (*IntervaloDelTemporizador = 2000*). Un cop es dispara el rellotge (han passat els 2 segons) és molt important desactivar-lo per evitar que s'executi contínuament.
+![Inici srcNivell1](/assets/mit_breakout/inici-scrNivell1.png)
+
+Programem el moviment de la barra.
+![Moviment barra](/assets/mit_breakout/moviment-barra.png)
+
+
 **Per moure la barra mitjançant moviment de mòbil utiltizar acelerometro**
 ![Programació acelerometro](/assets/mit_breakout/acelerometro.png)
+
+
