@@ -81,6 +81,14 @@ Ja podem programar quan la pilota toca una vora.
 
 ![Pilota toca vora](/assets/mit_breakout/tocaVora.png)
 
+L'última part que ens falta és quan la pilota col·lisiona un bloc. En aquest haurem de programar bloc a bloc (en aquesta primera versió en tenim 4) que desapareixi i faixi rebotar la pilota. A part, sempre que es trenqui un bloc haurem de disminuir la variable amb el nombre de blocs disponibles (*num_blocs*) i controlar el final del nivell. Per aquestes dues darreres accions crearem un procediment.
+
+![Procediment trenca bloc](/assets/mit_breakout/trencaBloc.png)
+
+Ara ja podem programar el trencament del bloc en concret. El següent codi s'ha de fer per tots els blocs disponibles en el nivell (només es mostra el trencament del bloc *sprBlocG1*).
+
+![Trenca Bloc G1](/assets/mit_breakout/trencaBlocG1.png)
+
 **Per moure la barra mitjançant moviment de mòbil utiltizar acelerometro**
 ![Programació acelerometro](/assets/mit_breakout/acelerometro.png)
 
