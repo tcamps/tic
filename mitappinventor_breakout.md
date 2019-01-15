@@ -65,8 +65,13 @@ Programem el moviment de la barra.
 
 ![Moviment barra](/assets/mit_breakout/moviment-barra.png)
 
+Amb el moviment de la pilota tenim més opcions a programar: quan toca una vora qualsevol, quan toca la vora inferior, al tocar la barra i al tocar un bloc. El cas de tocar un bloc el programarem més endavant dins el codi del bloc, anem ara a programar la resta d'opcions. Pel moviment de la pilota cal tindre en compte els valors de les vores i direccions en MIT App Inventor, en la següent imatge es mostren aquests valors.
 
+![Vores i direccions](/assets/mit_breakout/vores_direccions.png)
 
+Quan la pilota toca la barra.
+
+![Pilota toca la barra](/assets/mit_breakout/tocaBarra.png)
 
 **Per moure la barra mitjançant moviment de mòbil utiltizar acelerometro**
 ![Programació acelerometro](/assets/mit_breakout/acelerometro.png)
