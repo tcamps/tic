@@ -77,6 +77,10 @@ Quan toca una vora hem de tindre en compte de si es tracta de la vora inferior, 
 
 ![Procediment treu vida](/assets/mit_breakout/treuVida.png)
 
+Ja podem programar quan la pilota toca una vora.
+
+![Pilota toca vora](/assets/mit_breakout/tocaVora.png)
+
 **Per moure la barra mitjançant moviment de mòbil utiltizar acelerometro**
 ![Programació acelerometro](/assets/mit_breakout/acelerometro.png)
 
