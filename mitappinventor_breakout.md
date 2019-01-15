@@ -64,6 +64,7 @@ Programem el moviment de la barra.
 ![Moviment barra](/assets/mit_breakout/moviment-barra.png)
 
 
+
 **Per moure la barra mitjançant moviment de mòbil utiltizar acelerometro**
 ![Programació acelerometro](/assets/mit_breakout/acelerometro.png)
 
