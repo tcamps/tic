@@ -58,10 +58,13 @@ Crearem tres procediments per inicialitzar la posició dels blocs, la barra i la
 ![Procediment inicialitza blocs](/assets/mit_breakout/iniBlocs.png)
 
 Anem a programar l'inici del joc en carregar la pantalla. Aquí utilitzarem l'element **rljInici** per provocar un petit retard de 2 segons. El temps de retard l'hem assignat a la pantalla de disseny (*IntervaloDelTemporizador = 2000*). Un cop es dispara el rellotge (han passat els 2 segons) és molt important desactivar-lo per evitar que s'executi contínuament.
+
 ![Inici srcNivell1](/assets/mit_breakout/inici-scrNivell1.png)
 
 Programem el moviment de la barra.
+
 ![Moviment barra](/assets/mit_breakout/moviment-barra.png)
+
 
 
 
