@@ -92,6 +92,7 @@ Ara ja podem programar el trencament del bloc en concret. El següent codi s'ha 
 ## Properes versions del joc
 Hem desenvolupat una versió molt bàsica del joc. En properes versions podríem aplicar varies millores:
 * Afegir més blocs al primer nivell.
+* Augmentar la velocitat de la pilota cada cert temps.
 * Crear més nivells.
 * Crear blocs especials amb premis. Al trencar aquests blocs cauen premis que es poden agafar amb la barra. Alguns exemples de premis podrien ser vides, opció de disparar, dues pilotes, barra més gran, ...
 * Fer moure la barra mitjançant el moviment del mòbil. Per fer-ho cal afegir un objecte del tipus *Sensores > Acelerómetro* a la pantalla i programar el moviment en horitzontal per la pantalla:
