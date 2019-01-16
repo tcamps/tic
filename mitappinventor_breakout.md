@@ -90,8 +90,11 @@ Ara ja podem programar el trencament del bloc en concret. El següent codi s'ha 
 ![Trenca Bloc G1](/assets/mit_breakout/trencaBlocG1.png)
 
 ## Properes versions del joc
-Hem desenvolupat una versió molt bàsica del joc. En properes versions caldria afegir més blocs al primer nivell i crear més nivells. Una altra millora que ens podriem plantejar seria fer moure la barra mitjançant el moviment del mòbil, per fer-ho cal afegir un objecte del tipus *Sensores > Acelerómetro* a la pantalla i programar el moviment en horitzontal per la pantalla.
-
+Hem desenvolupat una versió molt bàsica del joc. En properes versions podríem aplicar varies millores:
+* Afegir més blocs al primer nivell.
+* Crear més nivells.
+* Crear blocs especials amb premis. Al trencar aquests blocs cauen premis que es poden agafar amb la barra. Alguns exemples de premis podrien ser vides, opció de disparar, dues pilotes, barra més gran, ...
+* Fer moure la barra mitjançant el moviment del mòbil. Per fer-ho cal afegir un objecte del tipus *Sensores > Acelerómetro* a la pantalla i programar el moviment en horitzontal per la pantalla:
 ![Programació acelerometro](/assets/mit_breakout/acelerometro.png)
 
 
