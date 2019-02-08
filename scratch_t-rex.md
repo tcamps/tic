@@ -16,3 +16,13 @@ Per donar sensació de moviment hem de fer moure el terra. Hi ha varies tècniqu
 A continuació hi ha el codi necessari per desenvolupar aquest moviment:
 
 ![Moviment terra](/assets/scratch_trex/mov_terra.png)
+
+## Moviment del personatge
+
+Creem un nou personatge "dino" amb quatre vestits diferents, posant com a primer i per defecte el d'inici.
+
+![Vestits dinosaure](/assets/scratch_trex/dino-vestits.png)
+
+Per simular el moviment del dinosaure anem intercal·lant entre els dos vestits de caminar. Per definir el temps d'espera entre cada canvi de vestit utilitzem la variable de velocitat creada al principi. A més velocitat menys temps d'espera entre el canvi.
+
+![Moviment dinosaure](/assets/scratch_trex/dino-moviment.png)
