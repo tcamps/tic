@@ -33,3 +33,12 @@ El dinosaure ha de saltar al prémer la tecla 'espai'. Per fer el salt, augmenta
 
 ## Aparició d'objectes
 
+Anem a programar que cada cert temps aparegui un cactus. Si el dinosaure el consegueix esquivar augmentarà la puntuació i en cas contrari s'acabarà el joc. El truc està en crear un bucle de moviment fins que l'objecte toqui el dinosaure o arribi a una posició on hagi superat al dinosaure. Un cop fora del bucle, comprovem quina de les dues situacions s'ha produït i procedim.
+
+![Moviment cactus](/assets/scratch_trex/cactus-moviment.png)
+
+En cas que l'objecte col·lisioni amb el dinosaure enviem un missatge de 'game_over' a tots, però recollirem aquest missatge en el personatge del dinosaure, on canviarem el seu vestit i ho aturarem tot.
+
+![Game Over](/assets/scratch_trex/dinosareu-gameover.png)
+
+Podem afegir tants d'objectes com desitgem.
