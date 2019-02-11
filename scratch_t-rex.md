@@ -39,6 +39,6 @@ Anem a programar que cada cert temps aparegui un cactus. Si el dinosaure el cons
 
 En cas que l'objecte col·lisioni amb el dinosaure enviem un missatge de 'game_over' a tots, però recollirem aquest missatge en el personatge del dinosaure, on canviarem el seu vestit i ho aturarem tot.
 
-![Game Over](/assets/scratch_trex/dinosareu-gameover.png)
+![Game Over](/assets/scratch_trex/dinosaure-gameover.png)
 
 Podem afegir tants d'objectes com desitgem.
