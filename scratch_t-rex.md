@@ -26,3 +26,10 @@ Creem un nou personatge "dino" amb quatre vestits diferents, posant com a primer
 Per simular el moviment del dinosaure anem intercal·lant entre els dos vestits de caminar. Per definir el temps d'espera entre cada canvi de vestit utilitzem la variable de velocitat creada al principi. A més velocitat menys temps d'espera entre el canvi.
 
 ![Moviment dinosaure](/assets/scratch_trex/dino-moviment.png)
+
+El dinosaure ha de saltar al prémer la tecla 'espai'. Per fer el salt, augmentarem la posició de 'y', esperarem un temps (depenent de la variable de velocitat) i tornarem a la posició inicial.
+
+![Salt dinosaure](/assets/scratch_trex/dino-salt.png)
+
+## Aparició d'objectes
+
