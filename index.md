@@ -2,4 +2,4 @@
 
 # Xarxes d'ordinadors i seguretat
 
-[Certificats digitals i HTTPS](../blob/master/certificat_navegador.html)
+* [Certificats digitals i HTTPS](../tic/certificat_navegador.html)
