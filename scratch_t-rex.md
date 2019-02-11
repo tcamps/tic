@@ -23,7 +23,7 @@ Creem un nou personatge "dino" amb quatre vestits diferents, posant com a primer
 
 ![Vestits dinosaure](/assets/scratch_trex/dino-vestits.png)
 
-Per simular el moviment del dinosaure anem intercal·lant entre els dos vestits de caminar. Per definir el temps d'espera entre cada canvi de vestit utilitzem la variable de velocitat creada al principi. A més velocitat menys temps d'espera entre el canvi.
+Per simular el moviment del dinosaure anem intercal·lant entre els dos vestits de caminar. Per definir el temps d'espera entre cada canvi de vestit utilitzem la variable de velocitat creada al principi. A més velocitat menys temps d'espera entre el canvi. També crearem una variable 'puntuació' disponible per tothom, la posarem visible a pantalla i la inicialitzarem a '0' en començar el joc.
 
 ![Moviment dinosaure](/assets/scratch_trex/dino-moviment.png)
 
