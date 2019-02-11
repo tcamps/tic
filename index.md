@@ -1,6 +1,6 @@
-# Taula de continguts
-
 Benvinguts al repositori de documentació del departament d'Informàtica del centre IES Josep Miquel Guàrdia per la assignatura de Tecnologies de la Informació (TIC).
+
+# Taula de continguts
 
 ## Xarxes d'ordinadors i seguretat
 
