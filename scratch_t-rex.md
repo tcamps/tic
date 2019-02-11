@@ -4,6 +4,8 @@ En aquest tutorial es desenvoluparà una primera versió simple del joc T-Rex qu
 
 ![T-Rex Game](/assets/scratch_trex/t-rex-game.png)
 
+En el següent enllaç pots descarregar les imatges necessàries per desenvolupar el joc: [Imatges T-Rex](/assets/scratch_trex/imatges_t-rex.zip)
+
 ## Moviment del terra
 
 Per donar sensació de moviment hem de fer moure el terra. Hi ha varies tècniques per fer moure un fons / imatge de manera continua, en aquest cas utilitzarem la següent:
