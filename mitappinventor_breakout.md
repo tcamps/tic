@@ -8,6 +8,8 @@ Aquesta primera versió estarà formada per només dues pantalles:
 * **Screen1**. Pantalla d'inici amb un botó per començar a jugar i un per tancar l'aplicació.
 * **scrNivell1**. El primer nivell del joc.
 
+[Imatges utilitzades per desenvolupar el joc.](/assets/mit_breakout/media.zip)
+
 ## Pantalla d'inici "Screen1"
 ### Disseny de la pantalla
 Formada per un logo i dos botons.
