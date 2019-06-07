@@ -10,6 +10,9 @@ Aquesta primera versió estarà formada per només dues pantalles:
 
 [Imatges utilitzades per desenvolupar el joc.](/assets/mit_breakout/media.zip)
 
+
+[Exemple d'una primera versió beta del joc.](/assets/mit_breakout/breakout-beta.apk)
+
 ## Pantalla d'inici "Screen1"
 ### Disseny de la pantalla
 Formada per un logo i dos botons.
