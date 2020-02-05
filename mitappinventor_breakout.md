@@ -60,9 +60,9 @@ Crearem tres procediments per inicialitzar la posició dels blocs, la barra i la
 * **iniPilota**. Posiciona la pilota al centre de la pantalla, estableix la velocitat i comença a moure-la.
 ![Procediment inicialitza pilota](/assets/mit_breakout/iniPilota.png)
 * **iniBlocs**. Posiciona els quatre blocs.
-En aquest cas hem de col·locat els quatre blocs de manera uniforme depenent de l'amplada de la pantalla. Primer hem d'entendre com calcular l'espai de separació entre els blocs. en el següent esquema s'explica com fer aquests càlculs.
+En aquest cas hem de col·locar els quatre blocs de manera uniforme depenent de l'amplada de la pantalla. Primer hem d'entendre com calcular l'espai de separació entre els blocs. en el següent esquema s'explica com fer aquests càlculs.
 ![Càlcul espai entre blocs](/assets/mit_breakout/posicio_blocs.png)
-Per fer aquests càlculs crearem una [variable local] (https://es.wikipedia.org/wiki/Variable_local). 
+Per fer aquests càlculs crearem una [variable local](https://es.wikipedia.org/wiki/Variable_local). 
 ![Procediment inicialitza blocs](/assets/mit_breakout/iniBlocs.png)
 
 Anem a programar l'inici del joc en carregar la pantalla. Aquí utilitzarem l'element **rljInici** per provocar un petit retard de 2 segons. El temps de retard l'hem assignat a la pantalla de disseny (*IntervaloDelTemporizador = 2000*). Un cop es dispara el rellotge (han passat els 2 segons) és molt important desactivar-lo per evitar que s'executi contínuament.
