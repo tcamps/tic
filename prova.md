@@ -16,3 +16,5 @@ e1|e2
 Prova feta des de atom:
 - llista
 - llista
+
+Nous elements
