@@ -1,0 +1,3 @@
+# Introducció al Framework Foundation
+*Foundation* és un Framework HTML i CSS. Un Framework és un entorn de treball que ens facilita l'utilització d'una metodologia de desenvolupament i ens subministra uns elements ja creats com, en aquest cas, formularis, pàgines d'inici de sessió, menús de navegació, ...
+
