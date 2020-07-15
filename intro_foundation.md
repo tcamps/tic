@@ -10,7 +10,8 @@ Tindrem una carpeta *css* i *js* amb els arxius d'estil (CSS) i Javascript respe
 ## Creacio d'una primera pàgina
 Dins la carpeta arrel creem un arxiu *exemple.html* amb el següent contingut bàsic:
 
-'<!doctype html>
+~~~
+<!doctype html>
 <html class="no-js" lang="ca" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -22,5 +23,5 @@ Dins la carpeta arrel creem un arxiu *exemple.html* amb el següent contingut b�
   </head>
   <body>
   </body>
-</html>'
-
+</html>
+~~~
