@@ -26,7 +26,7 @@ Dins la carpeta arrel creem un arxiu *exemple.html* amb el següent contingut b�
 </html>
 ~~~
 
-A la pàgina de documentació de *Foundation* hi ha explicats tots els elements que podem utilitzar: [Documentació de Foundation](https://get.foundation/sites/docs/) Anem a fer un petit exemple afegit un barra de navegació, un contingut separat amb dos columnes i un botó.
+A la pàgina de [documentació de *Foundation*](https://get.foundation/sites/docs/) hi ha explicats tots els elements que podem utilitzar. Anem a fer un petit exemple afegit un barra de navegació, un contingut separat amb dos columnes i un botó.
 
 ### Barra de navegació
 A la pàgina de documentació anem a *[Navigation --> Top Bar](https://get.foundation/sites/docs/top-bar.html)* i agafem el primer exemple. Copiem el codi l'afegim a la nostra pàgina. Treurem el menú desplegable sota la primera opció, la caixa de cerca de la dreta i personalitzem el títol i els enllaços. Com a exemple, ens quedaria el següent codi:
