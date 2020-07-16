@@ -43,12 +43,33 @@ A la pàgina de documentació anem a *[Navigation --> Top Bar](https://get.found
 </div>
 ~~~
 
-### Contingut principal
-En el nostre exemple volem una columna principal amb el contingut i una columna més petita a la dreta amb, per exemple, les darreres notícies publicades al nostre lloc. Per dissenyar el contingut utilitzarem el sistema de quadrícula *XY Grid* de *Foundation*: [*General --> XY Grid*](https://get.foundation/sites/docs/xy-grid.html). Anem al primer exemple (*Basics*) i agafem el tercer exemple, però en el nostre cas invertim les columnes de manera que ens quedi la primera més gran que la segona.
+### Sistema de quadrícula
+El sistema de quadrícula ens ajuda a repartir el contingut del nostre lloc web en cel·les que poden ser col·locades horitzontalment (files) i/o verticalment (columnes) i que es redimensiones i recol·loquen tenint en compte la mida de la pantalla. El sistema de quadrícula CSS més actual és el *Flexbox Grid*.
+
+En el nostre exemple volem una columna principal amb el contingut i una columna més petita a la dreta amb, per exemple, les darreres notícies publicades al nostre lloc. Per dissenyar el contingut utilitzarem el sistema de quadrícula *XY Grid* de *Foundation*: [*General --> XY Grid*](https://get.foundation/sites/docs/xy-grid.html). Anem al primer exemple (*Basics*) i agafem el tercer exemple, però en el nostre cas invertim les columnes de manera que ens quedi la primera més gran que la segona i hi afegim una mica de contingut.
 ~~~
 <div class="grid-x">
-  <div class="cell medium-6 large-8">Contingut principal</div>
-  <div class="cell medium-6 large-4">Darreres notícies</div>
+  <div class="cell medium-6 large-8">
+    <h1>Contingut principal</h1>
+  </div>
+  <div class="cell medium-6 large-4">
+    Darreres notícies publicades
+    <ul>
+      <li>Webs desenvolupades</li>
+      <li>Introducció a Python</li>
+      <li>HTML5 i CSS3</li>
+    </ul>
+  </div>
 </div>
 ~~~
 
+Tot el codi anterior el posarem dins un *Grid Container*[https://get.foundation/sites/docs/xy-grid.html#grid-container] a fi de poder modificar l'amplada total del contingut.
+~~~
+<div class="grid-container">
+  <div class="grid-x">
+    ...
+  </div>
+</div>
+~~~
+
+### Personalització dels estils
