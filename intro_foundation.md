@@ -42,3 +42,13 @@ A la pàgina de documentació anem a *[Navigation --> Top Bar](https://get.found
   </div>
 </div>
 ~~~
+
+### Contingut principal
+En el nostre exemple volem una columna principal amb el contingut i una columna més petita a la dreta amb, per exemple, les darreres notícies publicades al nostre lloc. Per dissenyar el contingut utilitzarem el sistema de quadrícula *XY Grid* de *Foundation*: [*General --> XY Grid*](https://get.foundation/sites/docs/xy-grid.html). Anem al primer exemple (*Basics*) i agafem el tercer exemple, però en el nostre cas invertim les columnes de manera que ens quedi la primera més gran que la segona.
+~~~
+<div class="grid-x">
+  <div class="cell medium-6 large-8">Contingut principal</div>
+  <div class="cell medium-6 large-4">Darreres notícies</div>
+</div>
+~~~
+
