@@ -63,7 +63,7 @@ En el nostre exemple volem una columna principal amb el contingut i una columna 
 </div>
 ~~~
 
-Tot el codi anterior el posarem dins un *Grid Container*[https://get.foundation/sites/docs/xy-grid.html#grid-container] a fi de poder modificar l'amplada total del contingut.
+Tot el codi anterior el posarem dins un [*Grid Container*](https://get.foundation/sites/docs/xy-grid.html#grid-container) a fi de poder modificar l'amplada total del contingut.
 ~~~
 <div class="grid-container">
   <div class="grid-x">
@@ -73,3 +73,62 @@ Tot el codi anterior el posarem dins un *Grid Container*[https://get.foundation/
 ~~~
 
 ### Personalització dels estils
+Podem personalitzar els estils dels diferents elements HTML afegint les nostres pròpies classes CSS. Creem un nou full d'estills *personal.css* dins la carpeta *css* i creem les següents classes:
+~~~
+.contingut-principal {
+  background-color: #ffffff;
+}
+
+.columne-dreta {
+  background-color: #fff2f2;
+  padding: 10px;
+}
+
+.cos {
+  max-width: 1500px;
+  margin-top: 20px;
+}
+~~~
+
+I afegim la referència al nou full i a les classes en l'arxiu *exemple.html*. Finalment, el codi HTML ha de quedar així:
+~~~
+<!doctype html>
+<html class="no-js" lang="ca" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/personal.css">
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Títol lloc</li>
+          <li><a href="#">Inici</a></li>
+          <li><a href="#">Els meus treballs</a></li>
+          <li><a href="#">Contacta</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid-container cos">
+      <div class="grid-x">
+        <div class="cell medium-6 large-8 contingut-principal">
+          <h1>Contingut principal</h1>
+        </div>
+        <div class="cell medium-6 large-4 columne-dreta">
+          Darreres notícies publicades
+          <ul>
+            <li>Webs desenvolupades</li>
+            <li>Introducció a Python</li>
+            <li>HTML5 i CSS3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+~~~
