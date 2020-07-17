@@ -101,7 +101,7 @@ I afegim la referència al nou full i a les classes en l'arxiu *exemple.html*. F
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/personal.css">
+    **<link rel="stylesheet" href="css/personal.css">**
   </head>
   <body>
     <div class="top-bar">
