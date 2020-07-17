@@ -59,9 +59,12 @@ En el nostre exemple volem una columna principal amb el contingut i una columna 
       <li>Introducció a Python</li>
       <li>HTML5 i CSS3</li>
     </ul>
+    <a href="#" class="button">Llegeix més notícies</a>
   </div>
 </div>
 ~~~
+
+Es pot apreciar com també hem afegit un butó fent ús dels controls de *Foundation* al final de la llista: [*Controls --> Button*](https://get.foundation/sites/docs/button.html)
 
 Tot el codi anterior el posarem dins un [*Grid Container*](https://get.foundation/sites/docs/xy-grid.html#grid-container) a fi de poder modificar l'amplada total del contingut.
 ~~~
@@ -126,6 +129,7 @@ I afegim la referència al nou full i a les classes en l'arxiu *exemple.html*. F
             <li>Introducció a Python</li>
             <li>HTML5 i CSS3</li>
           </ul>
+          <a href="#" class="button">Llegeix més notícies</a>
         </div>
       </div>
     </div>
